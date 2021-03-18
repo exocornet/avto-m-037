@@ -8,6 +8,7 @@ $font-primary: 'Poppins',Arial, sans-serif;
 $white: #fff;
 $black: #000000;
 $darken: #00043c;
+$orange: #f79f24;
 
 $primary: #f79f24;
 $secondary: #064acb;
@@ -87,6 +88,15 @@ h1, h2, h3, h4, h5,
 				}
 				&:last-child{
 					color: rgba(255,255,255,.8);
+					a {
+						color: rgba(255,255,255,.8);
+						@include media-breakpoint-down(sm) {
+							font-size: 10px;
+						}
+						&:hover {
+							color: #f79f24;
+						}
+					}
 				}
 			}
 		}
@@ -246,7 +256,7 @@ h1, h2, h3, h4, h5,
 		color: $primary;
 	}
 	&:hover, &:focus{
-		color: $black;
+		color: $orange;
 	}
 }
 

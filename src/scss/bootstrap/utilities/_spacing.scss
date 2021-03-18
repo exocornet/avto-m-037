@@ -36,10 +36,7 @@
         .my#{$infix}-n#{$size} {
           margin-top: -$length !important;
         }
-        .mr#{$infix}-n#{$size},
-        .mx#{$infix}-n#{$size} {
-          margin-right: -$length !important;
-        }
+
         .mb#{$infix}-n#{$size},
         .my#{$infix}-n#{$size} {
           margin-bottom: -$length !important;
@@ -57,10 +54,7 @@
     .my#{$infix}-auto {
       margin-top: auto !important;
     }
-    .mr#{$infix}-auto,
-    .mx#{$infix}-auto {
-      margin-right: auto !important;
-    }
+
     .mb#{$infix}-auto,
     .my#{$infix}-auto {
       margin-bottom: auto !important;
