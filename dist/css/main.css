@@ -19392,6 +19392,9 @@ textarea.form-control {
 .footer .logo a {
   color: #fff;
 }
+.footer .logo a:hover {
+  color: #f79f24;
+}
 .footer .logo a span {
   color: #f79f24;
 }

@@ -1394,6 +1394,10 @@ textarea.form-control {
 		line-height: 1;
 		a{
 			color: $white;
+
+			&:hover {
+				color: $orange;
+			}
 			span{
 				color: $primary;
 			}
