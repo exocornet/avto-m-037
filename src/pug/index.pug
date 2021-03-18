@@ -1,0 +1,576 @@
+include ../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+
+doctype html
+html(lang="ru")
+  head
+    title Auto Repair - Free Bootstrap 4 Template by Colorlib
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
+  body
+    .wrap
+      .container
+        .row.justify-content-between
+          .col-md-3.d-flex.align-items-center
+            a.navbar-brand(href='index.html')
+              | Autorepair
+              span .
+          .col-md-7
+            .row
+              .col
+                .top-wrap.d-flex
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-location-arrow
+                  .text
+                    span Address
+                    span 721 New York NY 10016
+              .col
+                .top-wrap.d-flex
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-location-arrow
+                  .text
+                    span Call us
+                    span (+01) 123 456 7890
+              .col-md-3.d-flex.justify-content-end.align-items-center
+                .social-media
+                  p.mb-0.d-flex
+                    a.d-flex.align-items-center.justify-content-center(href='#')
+                      span.fa.fa-facebook
+                        i.sr-only Facebook
+                    a.d-flex.align-items-center.justify-content-center(href='#')
+                      span.fa.fa-twitter
+                        i.sr-only Twitter
+                    a.d-flex.align-items-center.justify-content-center(href='#')
+                      span.fa.fa-instagram
+                        i.sr-only Instagram
+                    a.d-flex.align-items-center.justify-content-center(href='#')
+                      span.fa.fa-dribbble
+                        i.sr-only Dribbble
+    nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
+      .container
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#ftco-nav' aria-controls='ftco-nav' aria-expanded='false' aria-label='Toggle navigation')
+          span.fa.fa-bars
+          |  Menu
+        form.searchform.order-lg-last(action='#')
+          .form-group.d-flex
+            input.form-control.pl-3(type='text' placeholder='Search')
+            button.form-control.search(type='submit' placeholder='')
+              span.fa.fa-search
+        #ftco-nav.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='index.html') Home
+            li.nav-item
+              a.nav-link(href='about.html') About
+            li.nav-item
+              a.nav-link(href='services.html') Services
+            li.nav-item
+              a.nav-link(href='project.html') Project
+            li.nav-item
+              a.nav-link(href='blog.html') Blog
+            li.nav-item
+              a.nav-link(href='contact.html') Contact
+    // END nav
+    .hero-wrap
+      .home-slider.owl-carousel
+        .slider-item(style='background-image:url(../src/public/images/bg_1.jpg);')
+          .overlay
+          .container
+            .row.no-gutters.slider-text.align-items-center.justify-content-start
+              .col-md-6.ftco-animate
+                .text.w-100
+                  h2 We are best car repair services
+                  h1.mb-4 Make your car last longer
+                  p
+                    a.btn.btn-primary(href='#') Book an appointment
+        .slider-item(style='background-image:url(../src/public/images/bg_2.jpg);')
+          .overlay
+          .container
+            .row.no-gutters.slider-text.align-items-center.justify-content-start
+              .col-md-6.ftco-animate
+                .text.w-100
+                  h2 We care about your car
+                  h1.mb-4 It&apos;s time to come to repair your car
+                  p
+                    a.btn.btn-primary(href='#') Book an appointment
+    section.intro
+      .container.intro-wrap
+        .row.no-gutters
+          .col-md-12.col-lg-9.bg-intro.d-sm-flex.align-items-center.align-items-stretch
+            .intro-box.d-flex.align-items-center
+              .icon.d-flex.align-items-center.justify-content-center
+                i.flaticon-repair
+              h2.mb-0
+                | Are you ready?
+                span Let&apos;s repair it now!
+            a.bg-primary.btn-custom.d-flex.align-items-center(href='#')
+              span Book an Appointment
+    section.ftco-section
+      .container
+        .row.justify-content-center.pb-5.mb-3
+          .col-md-7.heading-section.text-center.ftco-animate
+            span.subheading We offer Services
+            h2 Our car services
+        .row
+          .col-md-4.services.ftco-animate
+            .d-block.d-flex
+              .icon.d-flex.justify-content-center.align-items-center
+                span.flaticon-car-service
+              .media-body.pl-3
+                h3.heading Oil change
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                p
+                  a.btn-custom(href='#') Read more
+            .d-block.d-flex
+              .icon.d-flex.justify-content-center.align-items-center
+                span.flaticon-tyre
+              .media-body.pl-3
+                h3.heading Tire Change
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                p
+                  a.btn-custom(href='#') Read more
+          .col-md-4.services.ftco-animate
+            .d-block.d-flex
+              .icon.d-flex.justify-content-center.align-items-center
+                span.flaticon-battery
+              .media-body.pl-3
+                h3.heading Batteries
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                p
+                  a.btn-custom(href='#') Read more
+            .d-block.d-flex
+              .icon.d-flex.justify-content-center.align-items-center
+                span.flaticon-car-engine
+              .media-body.pl-3
+                h3.heading Engine Repair
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                p
+                  a.btn-custom(href='#') Read more
+          .col-md-4.services.ftco-animate
+            .d-block.d-flex
+              .icon.d-flex.justify-content-center.align-items-center
+                span.flaticon-tow-truck
+              .media-body.pl-3
+                h3.heading Tow Truck
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                p
+                  a.btn-custom(href='#') Read more
+            .d-block.d-flex
+              .icon.d-flex.justify-content-center.align-items-center
+                span.flaticon-repair
+              .media-body.pl-3
+                h3.heading Car Maintenance
+                p
+                  | Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                p
+                  a.btn-custom(href='#') Read more
+    section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light
+      .container
+        .row.d-flex.no-gutters
+          .col-md-6.d-flex
+            .img.img-video.d-flex.align-self-stretch.align-items-center.justify-content-center.mb-4.mb-sm-0(style='background-image:url(../src/public/images/about.jpg);')
+              a.icon-video.popup-vimeo.d-flex.justify-content-center.align-items-center(href='https://vimeo.com/45830194')
+                span.fa.fa-play
+          .col-md-6.pl-md-5
+            .row.justify-content-start.py-5
+              .col-md-12.heading-section.ftco-animate
+                span.subheading Welcome to Autorepair
+                h2.mb-4 We help more than 45 years serving customer car
+                p
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                .tabulation-2.mt-4
+                  ul.nav.nav-pills.nav-fill.d-md-flex.d-block
+                    li.nav-item.mb-md-0.mb-2
+                      a.nav-link.active.py-2(data-toggle='tab' href='#home1') Our Mission
+                    li.nav-item.px-lg-2.mb-md-0.mb-2
+                      a.nav-link.py-2(data-toggle='tab' href='#home2') Our Vision
+                    li.nav-item
+                      a.nav-link.py-2.mb-md-0.mb-2(data-toggle='tab' href='#home3') Our Value
+                  .tab-content.rounded.mt-2
+                    #home1.tab-pane.container.p-0.active
+                      p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    #home2.tab-pane.container.p-0.fade
+                      p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    #home3.tab-pane.container.p-0.fade
+                      p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+    section#section-counter.ftco-counter
+      .container
+        .row
+          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+            .block-18.text-center
+              .text
+                strong.number(data-number='45') 0
+              .text
+                span Years of Experienced
+          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+            .block-18.text-center
+              .text
+                strong.number(data-number='8500') 0
+              .text
+                span Project completed
+          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+            .block-18.text-center
+              .text
+                strong.number(data-number='2342') 0
+              .text
+                span Happy Customers
+          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+            .block-18.text-center
+              .text
+                strong.number(data-number='30') 0
+              .text
+                span Award Winning
+    section.ftco-appointment.ftco-section.ftco-no-pt.ftco-no-pb.img(style='background-image: url(../src/public/images/bg_3.jpg);')
+      .overlay
+      .container
+        .row.d-md-flex.justify-content-end
+          .col-md-12.col-lg-6.half.p-3.py-5.pl-lg-5.ftco-animate.heading-section.heading-section-white
+            span.subheading Booking an Appointment
+            h2.mb-4 Free Consultation
+            form.appointment(action='#')
+              .row
+                .col-md-12
+                  .form-group
+                    .form-field
+                      .select-wrap
+                        .icon
+                          span.fa.fa-chevron-down
+                        select.form-control(name='' id='')
+                          option(value='') Select services
+                          option(value='') Change Oil
+                          option(value='') Engine Repair
+                          option(value='') Battery Replace
+                          option(value='') Change Tire
+                          option(value='') Tow Truck
+                .col-md-6
+                  .form-group
+                    input.form-control(type='text' placeholder='Your Name')
+                .col-md-6
+                  .form-group
+                    input.form-control(type='text' placeholder='Vehicle number')
+                .col-md-6
+                  .form-group
+                    .input-wrap
+                      .icon
+                        span.fa.fa-calendar
+                      input.form-control.appointment_date(type='text' placeholder='Date')
+                .col-md-6
+                  .form-group
+                    .input-wrap
+                      .icon
+                        span.fa.fa-clock-o
+                      input.form-control.appointment_time(type='text' placeholder='Time')
+                .col-md-12
+                  .form-group
+                    textarea.form-control(name='' id='' cols='30' rows='7' placeholder='Message')
+                .col-md-12
+                  .form-group
+                    input.btn.btn-dark.py-3.px-4(type='submit' value='Send message')
+    section.ftco-section.testimony-section.bg-light
+      .container
+        .row.justify-content-center.pb-5.mb-3
+          .col-md-7.heading-section.heading-section-white.text-center.ftco-animate
+            span.subheading Testimonies
+            h2 Happy Clients &amp; Feedbacks
+        .row.ftco-animate
+          .col-md-12
+            .carousel-testimony.owl-carousel.ftco-owl
+              .item
+                .testimony-wrap.py-4
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-quote-left
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .d-flex.align-items-center
+                      .user-img(style='background-image: url(../src/public/images/person_1.jpg)')
+                      .pl-3
+                        p.name Roger Scott
+                        span.position Marketing Manager
+              .item
+                .testimony-wrap.py-4
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-quote-left
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .d-flex.align-items-center
+                      .user-img(style='background-image: url(../src/public/images/person_2.jpg)')
+                      .pl-3
+                        p.name Roger Scott
+                        span.position Marketing Manager
+              .item
+                .testimony-wrap.py-4
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-quote-left
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .d-flex.align-items-center
+                      .user-img(style='background-image: url(../src/public/images/person_3.jpg)')
+                      .pl-3
+                        p.name Roger Scott
+                        span.position Marketing Manager
+              .item
+                .testimony-wrap.py-4
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-quote-left
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .d-flex.align-items-center
+                      .user-img(style='background-image: url(../src/public/images/person_1.jpg)')
+                      .pl-3
+                        p.name Roger Scott
+                        span.position Marketing Manager
+              .item
+                .testimony-wrap.py-4
+                  .icon.d-flex.align-items-center.justify-content-center
+                    span.fa.fa-quote-left
+                  .text
+                    p.mb-4
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .d-flex.align-items-center
+                      .user-img(style='background-image: url(../src/public/images/person_2.jpg)')
+                      .pl-3
+                        p.name Roger Scott
+                        span.position Marketing Manager
+    section.ftco-section
+      .container
+        .row.justify-content-center.pb-5.mb-3
+          .col-md-7.heading-section.text-center.ftco-animate
+            span.subheading News &amp; Blog
+            h2 Latest news from our blog
+        .row.d-flex
+          .col-md-4.d-flex.ftco-animate
+            .blog-entry.align-self-stretch
+              a.block-20.rounded(href='blog-single.html' style="background-image: url('../src/public/images/image_1.jpg');")
+              .text.mt-3
+                .posted.mb-3.d-flex
+                  .img.author(style='background-image: url(../src/public/images/person_2.jpg);')
+                  .desc.pl-3
+                    span Posted by John doe
+                    span 24 February 2020
+                h3.heading
+                  a(href='#') Best wheel alignment &amp; air conditioning
+          .col-md-4.d-flex.ftco-animate
+            .blog-entry.align-self-stretch
+              a.block-20.rounded(href='blog-single.html' style="background-image: url('../src/public/images/image_2.jpg');")
+              .text.mt-3
+                .posted.mb-3.d-flex
+                  .img.author(style='background-image: url(../src/public/images/person_3.jpg);')
+                  .desc.pl-3
+                    span Posted by John doe
+                    span 24 February 2020
+                h3.heading
+                  a(href='#') Best wheel alignment &amp; air conditioning
+          .col-md-4.d-flex.ftco-animate
+            .blog-entry.align-self-stretch
+              a.block-20.rounded(href='blog-single.html' style="background-image: url('../src/public/images/image_3.jpg');")
+              .text.mt-3
+                .posted.mb-3.d-flex
+                  .img.author(style='background-image: url(../src/public/images/person_1.jpg);')
+                  .desc.pl-3
+                    span Posted by John doe
+                    span 24 February 2020
+                h3.heading
+                  a(href='#') Best wheel alignment &amp; air conditioning
+    section.ftco-section.bg-light
+      .container
+        .row.justify-content-center.pb-5.mb-3
+          .col-md-7.heading-section.text-center.ftco-animate
+            span.subheading Price &amp; Plans
+            h2 Pricing
+        .row
+          .col-md-6.col-lg-3.ftco-animate
+            .block-7
+              .text-center
+                span.excerpt.d-block First PMS
+                span.price
+                  sup $
+                  span.number 78.98
+                .pricing-text
+                  p
+                    | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                a.btn.btn-secondary.d-block.px-2.py-3(href='#') Get Started
+          .col-md-6.col-lg-3.ftco-animate
+            .block-7
+              .text-center
+                span.excerpt.d-block Engine Diagnostics
+                span.price
+                  sup $
+                  span.number 83.75
+                .pricing-text
+                  p
+                    | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                a.btn.btn-secondary.d-block.px-2.py-3(href='#') Get Started
+          .col-md-6.col-lg-3.ftco-animate
+            .block-7
+              .text-center
+                span.excerpt.d-block Tow Truck
+                span.price
+                  sup $
+                  span.number 85.00
+                .pricing-text
+                  p
+                    | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                a.btn.btn-secondary.d-block.px-2.py-3(href='#') Get Started
+          .col-md-6.col-lg-3.ftco-animate
+            .block-7
+              .text-center
+                span.excerpt.d-block Car Wash
+                span.price
+                  sup $
+                  span.number 30.50
+                .pricing-text
+                  p
+                    | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                a.btn.btn-secondary.d-block.px-2.py-3(href='#') Get Started
+    section.ftco-section.ftco-no-pb
+      .container
+        .row.justify-content-center.pb-5.mb-3
+          .col-md-7.heading-section.text-center.ftco-animate
+            span.subheading Projects
+            h2 Done Projects
+      .container-fluid.px-md-0
+        .row.no-gutters
+          .col-md-3.ftco-animate
+            .work.img.d-flex.align-items-end(style='background-image: url(../src/public/images/work-1.jpg);')
+              a.icon.image-popup.d-flex.justify-content-center.align-items-center(href='../src/public/images/work-1.jpg')
+                span.fa.fa-expand
+              .desc.w-100.px-4
+                .text.w-100.mb-3
+                  span Engine
+                  h2
+                    a(href='work-single.html') Engine Testing Complated
+          .col-md-3.ftco-animate
+            .work.img.d-flex.align-items-end(style='background-image: url(../src/public/images/work-2.jpg);')
+              a.icon.image-popup.d-flex.justify-content-center.align-items-center(href='../src/public/images/work-2.jpg')
+                span.fa.fa-expand
+              .desc.w-100.px-4
+                .text.w-100.mb-3
+                  span Oil Change
+                  h2
+                    a(href='work-single.html') Change Oil Completed
+          .col-md-3.ftco-animate
+            .work.img.d-flex.align-items-end(style='background-image: url(../src/public/images/work-3.jpg);')
+              a.icon.image-popup.d-flex.justify-content-center.align-items-center(href='../src/public/images/work-3.jpg')
+                span.fa.fa-expand
+              .desc.w-100.px-4
+                .text.w-100.mb-3
+                  span Engine
+                  h2
+                    a(href='work-single.html') Engine Diagnostics
+          .col-md-3.ftco-animate
+            .work.img.d-flex.align-items-end(style='background-image: url(../src/public/images/work-4.jpg);')
+              a.icon.image-popup.d-flex.justify-content-center.align-items-center(href='../src/public/images/work-4.jpg')
+                span.fa.fa-expand
+              .desc.w-100.px-4
+                .text.w-100.mb-3
+                  span Tire
+                  h2
+                    a(href='work-single.html') Tire Change
+    footer.footer.ftco-section
+      .container
+        .row.mb-5
+          .col-md-6.col-lg
+            .ftco-footer-widget.mb-4
+              h2.logo
+                a(href='#')
+                  | Autorepair
+                  span .
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-4
+                li.ftco-animate
+                  a(href='#')
+                    span.fa.fa-twitter
+                li.ftco-animate
+                  a(href='#')
+                    span.fa.fa-facebook
+                li.ftco-animate
+                  a(href='#')
+                    span.fa.fa-instagram
+          .col-md-6.col-lg
+            .ftco-footer-widget.mb-4.ml-md-5
+              h2.ftco-heading-2 Services
+              ul.list-unstyled
+                li
+                  a.py-1.d-block(href='#')
+                    span.fa.fa-check.mr-3
+                    | Oil Change
+                li
+                  a.py-1.d-block(href='#')
+                    span.fa.fa-check.mr-3
+                    | Batteries
+                li
+                  a.py-1.d-block(href='#')
+                    span.fa.fa-check.mr-3
+                    | Tow Truck
+                li
+                  a.py-1.d-block(href='#')
+                    span.fa.fa-check.mr-3
+                    | Tire Change
+                li
+                  a.py-1.d-block(href='#')
+                    span.fa.fa-check.mr-3
+                    | Engine Repair
+          .col-md-6.col-lg
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Contact information
+              .block-23.mb-3
+                ul
+                  li
+                    span.icon.fa.fa-map-marker
+                    span.text 203 Fake St. Mountain View, San Francisco, California, USA
+                  li
+                    a(href='#')
+                      span.icon.fa.fa-phone
+                      span.text +2 392 3929 210
+                  li
+                    a(href='#')
+                      span.icon.fa.fa-paper-plane
+                      span.text info@yourdomain.com
+          .col-md-6.col-lg
+            .ftco-footer-widget.mb-4
+              h2.ftco-heading-2 Business Hours
+              .opening-hours
+                h4 Opening Days:
+                p.pl-3
+                  span Monday &ndash; Friday : 9am to 20 pm
+                  span Saturday : 9am to 17 pm
+                h4 Vacations:
+                p.pl-3
+                  span All Sunday Days
+                  span All Official Holidays
+        .row
+          .col-md-12.text-center
+            p
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              | Copyright &copy;
+              script.
+                document.write(new Date().getFullYear());
+              |  All rights reserved | This template is made with
+              i.fa.fa-heart(aria-hidden='true')
+              |  by
+              a(href='https://colorlib.com' target='_blank') Colorlib
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+    // loader
+    #ftco-loader.show.fullscreen
+      svg.circular(width='48px' height='48px')
+        circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
+        circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+

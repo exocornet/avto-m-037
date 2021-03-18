@@ -1,0 +1,16 @@
+@import './css/animate.css';
+@import './css/owl.carousel.min.css';
+@import './css/owl.theme.default.min.css';
+@import './css/magnific-popup.css';
+@import './css/bootstrap-datepicker.css';
+@import './css/jquery.timepicker.css';
+@import './css/flaticon.css';
+@import "./style";
+@import './bootstrap/bootstrap-reboot';
+@import './bootstrap/bootstrap-grid';
+
+.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after {
+  pointer-events: none !important;
+  -webkit-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
