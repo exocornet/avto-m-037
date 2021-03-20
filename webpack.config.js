@@ -96,6 +96,12 @@ module.exports = {
       inject: 'body'
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "services.html",
+      template: './src/pug/services.pug',
+      inject: 'body'
+    }),
+
     new MiniCssExtractPlugin({
       filename: "css/main.css"
     }),
