@@ -2,12 +2,15 @@ import './scss/main.scss';
 // import './js/jquery.min';
 
 import * as $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+
 import "jquery-migrate";
 import "./js/popper.min";
 import "./js/bootstrap.min";
 import "./js/jquery.easing";
 import "./js/jquery.waypoints.min"; //install jquery-waypoints
-import "./js/jquery.stellar.min";
+// import "./js/jquery.stellar.min";
 import "./js/jquery.animateNumber.min";
 import "./js/bootstrap-datepicker";
 import "./js/jquery.timepicker.min";

@@ -18299,11 +18299,11 @@ h1, h2, h3, h4, h5,
 .hero-wrap {
   width: 100%;
   height: 100%;
-  position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  background-attachment: fixed;
 }
 @media (max-width: 1199.98px) {
   .hero-wrap {

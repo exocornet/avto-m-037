@@ -119,6 +119,8 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
+      // 'window.$': 'jquery',
+      // stellar: ['src/js/jquery.stellar.min.js', 'default'],
       // jquery: "./src/js/jquery.min.js",
       // jQuery: "./src/js/jquery.min.js",
       // "window.jQuery": "./src/js/jquery.min.js"
