@@ -1,6 +1,7 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
 - const titlePage = 'Услуги | Авторемонт в Бресткой области';
+- const nameBreadCrumbs = 'Услуги';
 
 doctype html
 html(lang="ru")
@@ -9,25 +10,12 @@ html(lang="ru")
   body
     include includes/header
 
-    section.hero-wrap.hero-wrap-2(style="background-image: url('images/bg_2.jpg');")
-      .overlay
-      .container
-        .row.no-gutters.slider-text.align-items-end
-          .col-md-9.ftco-animate.pb-5
-            p.breadcrumbs.mb-2
-              span.mr-2
-                a(href='/')
-                  | Главная
-                  i.fa.fa-chevron-right
-              span
-                | Услуги
-                i.fa.fa-chevron-right
-            h1.mb-0.bread Услуги
+    include includes/blocks/block-bread-crumbs
 
     section.ftco-section
       .container
 
-        include includes/bloks/blok-services.pug
+        include includes/blocks/block-services.pug
 
         .row.mt-4.mt-md-5.justify-content-between
           .col-md-7.ftco-animate
