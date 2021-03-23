@@ -88,8 +88,10 @@ module.exports = {
   },
 
   plugins: [
+    //очистка папки dist сборкой
     new CleanWebpackPlugin(),
 
+    //pug файлы генерируемые в html
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: './src/pug/index.pug',
@@ -114,16 +116,30 @@ module.exports = {
       inject: 'body'
     }),
 
-    // new HtmlWebpackPlugin({
-    //   filename: "single-service.html",
-    //   template: './src/pug/single-service.pug',
-    //   inject: 'body'
-    // }),
+    new HtmlWebpackPlugin({
+      filename: "single-service.html",
+      template: './src/pug/single-service.pug',
+      inject: 'body'
+    }),
 
+    new HtmlWebpackPlugin({
+      filename: "single-blog.html",
+      template: './src/pug/single-blog.pug',
+      inject: 'body'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "single-news.html",
+      template: './src/pug/single-news.pug',
+      inject: 'body'
+    }),
+
+    //отвечает за css
     new MiniCssExtractPlugin({
       filename: "css/main.css"
     }),
 
+    //отвечает за копирование не компилируемых файлов в продакшен
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -133,6 +149,7 @@ module.exports = {
       ]
     }),
 
+    //подключение jquery в проект
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
