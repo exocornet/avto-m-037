@@ -5372,6 +5372,11 @@
   "resolved" "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   "version" "4.0.0"
 
+"path-webpack@^0.0.3":
+  "integrity" "sha1-/23sdJ7sWpRgXATV9j/FVgegOhY="
+  "resolved" "https://registry.npmjs.org/path-webpack/-/path-webpack-0.0.3.tgz"
+  "version" "0.0.3"
+
 "performance-now@^2.1.0":
   "integrity" "sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns="
   "resolved" "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"

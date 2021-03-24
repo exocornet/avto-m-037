@@ -382,6 +382,7 @@
     "path-parse": "^1.0.6",
     "path-to-regexp": "^0.1.7",
     "path-type": "^4.0.0",
+    "path-webpack": "^0.0.3",
     "picomatch": "^2.2.2",
     "pify": "^4.0.1",
     "pinkie": "^2.0.4",

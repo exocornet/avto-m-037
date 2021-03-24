@@ -7,6 +7,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 // const globImporter = require('node-sass-glob-importer');
 
+
+
 module.exports = {
   mode: 'development',
   entry: './src/page.js',
@@ -66,6 +68,7 @@ module.exports = {
       //         }
       //       }
       // },
+
 
       // {
       //   test: /\.(png|jpg|gif)$/,
