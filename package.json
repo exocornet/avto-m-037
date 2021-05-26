@@ -554,7 +554,10 @@
     "yargs-parser": "^13.1.2",
     "yocto-queue": "^0.1.0"
   },
-  "repository": "git+https://github.com/exocornet/avto-m-037.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exocornet/avto-m-037.git"
+  },
   "bugs": {
     "url": "https://github.com/exocornet/avto-m-037/issues"
   },
