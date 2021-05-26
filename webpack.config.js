@@ -124,6 +124,12 @@ module.exports = {
       template: './src/pug/project.pug',
       inject: 'body'
     }),
+    
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: './src/pug/contact.pug',
+      inject: 'body'
+    }),
 
     new HtmlWebpackPlugin({
       filename: "about.html",
