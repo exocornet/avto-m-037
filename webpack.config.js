@@ -120,6 +120,18 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      filename: "project.html",
+      template: './src/pug/project.pug',
+      inject: 'body'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: './src/pug/about.pug',
+      inject: 'body'
+    }),
+
+    new HtmlWebpackPlugin({
       filename: "single-service.html",
       template: './src/pug/single-service.pug',
       inject: 'body'
