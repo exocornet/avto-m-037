@@ -11,7 +11,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
-  entry: './src/page.js',
+  entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'js/page.js'
@@ -40,10 +40,12 @@ module.exports = {
           }
         ]
       },
+
       {
           test: /\.css$/i,
           use: ["style-loader", "css-loader"],
       },
+
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -53,7 +55,10 @@ module.exports = {
           // "css-loader",
           {
             loader: "sass-loader",
-          }
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
       },
 
@@ -97,61 +102,61 @@ module.exports = {
     //pug файлы генерируемые в html
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: './src/pug/index.pug',
+      template: './src/pages/index.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "services.html",
-      template: './src/pug/services.pug',
+      template: './src/pages/services.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "blog.html",
-      template: './src/pug/blog.pug',
+      template: './src/pages/blog.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "news.html",
-      template: './src/pug/news.pug',
+      template: './src/pages/news.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "project.html",
-      template: './src/pug/project.pug',
+      template: './src/pages/project.pug',
       inject: 'body'
     }),
     
     new HtmlWebpackPlugin({
       filename: "contact.html",
-      template: './src/pug/contact.pug',
+      template: './src/pages/contact.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "about.html",
-      template: './src/pug/about.pug',
+      template: './src/pages/about.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "single-service.html",
-      template: './src/pug/single-service.pug',
+      template: './src/pages/single-service.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "single-blog.html",
-      template: './src/pug/single-blog.pug',
+      template: './src/pages/single-blog.pug',
       inject: 'body'
     }),
 
     new HtmlWebpackPlugin({
       filename: "single-news.html",
-      template: './src/pug/single-news.pug',
+      template: './src/pages/single-news.pug',
       inject: 'body'
     }),
 
@@ -175,11 +180,7 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      // 'window.$': 'jquery',
-      // stellar: ['src/js/jquery.stellar.min.js', 'default'],
-      // jquery: "./src/js/jquery.min.js",
-      // jQuery: "./src/js/jquery.min.js",
-      // "window.jQuery": "./src/js/jquery.min.js"
+      // 'window.$': 'jquery'
     })
 
   ]
