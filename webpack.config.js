@@ -17,6 +17,8 @@ module.exports = {
     filename: 'js/page.js'
   },
 
+  devtool: 'inline-source-map',
+
   devServer: {
     host: 'localhost',
     port: 3000,
