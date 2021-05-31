@@ -1,0 +1,190 @@
+@import './bootstrap/bootstrap';
+@import './bootstrap/variables';
+
+
+
+$font-primary: 'Poppins',Arial, sans-serif;
+
+$white: #fff;
+$black: #000000;
+$darken: #00043c;
+$orange: #f79f24;
+
+$primary: #f79f24;
+$secondary: #064acb;
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition) {
+  -moz-transition:    all $transition ease;
+  -o-transition:      all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: 		all $transition ease;
+  transition:         all $transition ease;
+}
+
+html {
+  // overflow-x: hidden;
+}
+body {
+  font-family: $font-primary;
+  background: $white;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: lighten($black,50%);
+  &.menu-show {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+}
+a {
+  transition: .3s all ease;
+  color: $primary;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $primary;
+    outline: none !important;
+  }
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+  font-weight: 400;
+}
+
+
+.wrap{
+  background: #202020;
+  padding: 25px 0;
+  .top-wrap{
+    font-size: 12px;
+    .icon{
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border:1px solid $primary;
+      span{
+        color: $primary;
+      }
+    }
+    .text{
+      padding-left: 15px;
+      width: calc(100% - 30px);
+      span{
+        display: block;
+        &:first-child{
+          text-transform: uppercase;
+        }
+        &:last-child{
+          color: rgba(255,255,255,.8);
+          a {
+            color: rgba(255,255,255,.8);
+            @include media-breakpoint-down(sm) {
+              font-size: 10px;
+            }
+            &:hover {
+              color: #f79f24;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bg-light {
+  background: #f8f9fd!important;
+}
+.bg-secondary{
+  background: $secondary !important;
+}
+
+.bg-primary{
+  background: $primary !important;
+}
+
+//BUTTON
+.btn {
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: none!important;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+  &.btn-primary {
+    background: $primary;
+    border: 1px solid $primary;
+    color: $white;
+    &:hover {
+      border: 1px solid $primary;
+      background: transparent;
+      color :$primary;
+    }
+    &.btn-outline-primary {
+      border: 1px solid $primary;
+      background: transparent;
+      color :$primary;
+      &:hover {
+        border: 1px solid transparent;
+        background: $primary;
+        color :$white;
+      }
+    }
+  }
+  &.btn-white {
+    background: $white;
+    border: 1px solid $white;
+    color: $black;
+    &:hover {
+      border: 1px solid $white;
+      background: transparent;
+      color :$white;
+    }
+    &.btn-outline-white {
+      border: 1px solid $white;
+      background: transparent;
+      color :$white;
+      &:hover {
+        border: 1px solid transparent;
+        background: $white;
+        color :$black;
+      }
+    }
+  }
+  &.btn-secondary {
+    background: $secondary;
+    border: 1px solid $secondary;
+    color: $white;
+    &:hover {
+      border: 1px solid $secondary;
+      background: transparent;
+      color :$secondary;
+    }
+    &.btn-outline-secondary {
+      border: 1px solid $secondary;
+      background: transparent;
+      color :$secondary;
+      &:hover {
+        border: 1px solid transparent;
+        background: $secondary;
+        color :$white;
+      }
+    }
+  }
+}

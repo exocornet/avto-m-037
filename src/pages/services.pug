@@ -6,17 +6,17 @@ include ../../node_modules/bempug/index
 
 doctype html
 html(lang="ru")
-  include includes/head
+  include modules/head
 
   body
-    include includes/header
+    include modules/header/header
 
-    include includes/blocks/block-bread-crumbs
+    include modules/blocks/block-bread-crumbs
 
     section.ftco-section
       .container
 
-        include includes/blocks/block-services.pug
+        include modules/blocks/block-services.pug
 
         .row.mt-4.mt-md-5.justify-content-between
           .col-md-7.ftco-animate
@@ -38,4 +38,4 @@ html(lang="ru")
                 span.fa.fa-check
                 | Auto Repair Shops Serving Customer
 
-    include includes/footer
+    include modules/footer/footer

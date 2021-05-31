@@ -1,24 +1,24 @@
 include ../../node_modules/bempug/index
 - BEMPUG.modifier = '_';
-- const titlePage = 'Блог | Авторемонт в Бресткой области';
-- const nameBreadCrumbs = 'Блог';
-- const classActiveLink = "Блог";
+- const titlePage = 'Новости | Авторемонт в Бресткой области';
+- const nameBreadCrumbs = 'Новости';
+- const classActiveLink = "Новости";
 
 doctype html
 html(lang="ru")
-  include includes/head
+  include modules/head
 
   body
-    include includes/header
+    include modules/header/header
 
-    include includes/blocks/block-bread-crumbs
+    include modules/blocks/block-bread-crumbs
 
     section.ftco-section
       .container
         .row
           .col-md-4.d-flex.ftco-animate
             .blog-entry.align-self-stretch
-              a.block-20.rounded(href='single-blog.html' style="background-image: url('images/image_1.jpg');")
+              a.block-20.rounded(href='single-news.html' style="background-image: url('images/image_1.jpg');")
               .text.mt-3
                 .posted.mb-3.d-flex
                   .img.author(style='background-image: url(images/person_2.jpg);')
@@ -29,7 +29,7 @@ html(lang="ru")
                   a(href='#') Best wheel alignment &amp; air conditioning
           .col-md-4.d-flex.ftco-animate
             .blog-entry.align-self-stretch
-              a.block-20.rounded(href='single-blog.html' style="background-image: url('images/image_2.jpg');")
+              a.block-20.rounded(href='single-news.html' style="background-image: url('images/image_2.jpg');")
               .text.mt-3
                 .posted.mb-3.d-flex
                   .img.author(style='background-image: url(images/person_3.jpg);')
@@ -40,7 +40,7 @@ html(lang="ru")
                   a(href='#') Best wheel alignment &amp; air conditioning
           .col-md-4.d-flex.ftco-animate
             .blog-entry.align-self-stretch
-              a.block-20.rounded(href='single-blog.html' style="background-image: url('images/image_3.jpg');")
+              a.block-20.rounded(href='single-news.html' style="background-image: url('images/image_3.jpg');")
               .text.mt-3
                 .posted.mb-3.d-flex
                   .img.author(style='background-image: url(images/person_1.jpg);')
@@ -51,7 +51,7 @@ html(lang="ru")
                   a(href='#') Best wheel alignment &amp; air conditioning
           .col-md-4.d-flex.ftco-animate
             .blog-entry.align-self-stretch
-              a.block-20.rounded(href='single-blog.html' style="background-image: url('images/image_5.jpg');")
+              a.block-20.rounded(href='single-news.html' style="background-image: url('images/image_5.jpg');")
               .text.mt-3
                 .posted.mb-3.d-flex
                   .img.author(style='background-image: url(images/person_2.jpg);')
@@ -62,7 +62,7 @@ html(lang="ru")
                   a(href='#') Best wheel alignment &amp; air conditioning
           .col-md-4.d-flex.ftco-animate
             .blog-entry.align-self-stretch
-              a.block-20.rounded(href='single-blog.html' style="background-image: url('images/image_4.jpg');")
+              a.block-20.rounded(href='single-news.html' style="background-image: url('images/image_4.jpg');")
               .text.mt-3
                 .posted.mb-3.d-flex
                   .img.author(style='background-image: url(images/person_3.jpg);')
@@ -73,7 +73,7 @@ html(lang="ru")
                   a(href='#') Best wheel alignment &amp; air conditioning
           .col-md-4.d-flex.ftco-animate
             .blog-entry.align-self-stretch
-              a.block-20.rounded(href='single-blog.html' style="background-image: url('images/image_6.jpg');")
+              a.block-20.rounded(href='single-news.html' style="background-image: url('images/image_6.jpg');")
               .text.mt-3
                 .posted.mb-3.d-flex
                   .img.author(style='background-image: url(images/person_1.jpg);')
@@ -101,4 +101,4 @@ html(lang="ru")
                 li
                   a(href='#') &gt;
 
-    include includes/footer
+    include modules/footer/footer

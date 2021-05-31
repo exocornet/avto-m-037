@@ -48,7 +48,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "webpack --mode production",
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "watch": "webpack --watch"
   },
   "author": "Evgeniy",
   "license": "ISC",

@@ -5,10 +5,10 @@ include ../../node_modules/bempug/index
 
 doctype html
 html(lang="ru")
-  include includes/head
+  include modules/head
 
   body
-    include includes/header
+    include modules/header/header
 
     .hero-wrap
       .home-slider.owl-carousel
@@ -47,7 +47,7 @@ html(lang="ru")
 
     section.ftco-section
       .container
-        include includes/blocks/block-services.pug
+        include modules/blocks/block-services.pug
 
     section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light
       .container
@@ -403,4 +403,4 @@ html(lang="ru")
                   h2
                     a(href='work-single.html') Tire Change
 
-    include includes/footer
+    include modules/footer/footer
