@@ -49,111 +49,12 @@ html(lang="ru")
       .container
         include modules/blocks/block-services.pug
 
-    section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light
-      .container
-        .row.d-flex.no-gutters
-          .col-md-6.d-flex
-            .img.img-video.d-flex.align-self-stretch.align-items-center.justify-content-center.mb-4.mb-sm-0(style='background-image:url(images/about.jpg);')
-              a.icon-video.popup-vimeo.d-flex.justify-content-center.align-items-center(href='https://vimeo.com/45830194')
-                span.fa.fa-play
-          .col-md-6.pl-md-5
-            .row.justify-content-start.py-5
-              .col-md-12.heading-section.ftco-animate
-                span.subheading Welcome to Autorepair
-                h2.mb-4 We help more than 45 years serving customer car
-                p
-                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                .tabulation-2.mt-4
-                  ul.nav.nav-pills.nav-fill.d-md-flex.d-block
-                    li.nav-item.mb-md-0.mb-2
-                      a.nav-link.active.py-2(data-toggle='tab' href='#home1') Наша миссия
-                    li.nav-item.px-lg-2.mb-md-0.mb-2
-                      a.nav-link.py-2(data-toggle='tab' href='#home2') Наш взгляд
-                    li.nav-item
-                      a.nav-link.py-2.mb-md-0.mb-2(data-toggle='tab' href='#home3') Наши ценности
-                  .tab-content.rounded.mt-2
-                    #home1.tab-pane.container.p-0.active
-                      p
-                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                    #home2.tab-pane.container.p-0.fade
-                      p
-                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                    #home3.tab-pane.container.p-0.fade
-                      p
-                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-    section#section-counter.ftco-counter
-      .container
-        .row
-          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
-            .block-18.text-center
-              .text
-                strong.number(data-number='26') 0
-              .text
-                span Лет опыта
-          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
-            .block-18.text-center
-              .text
-                strong.number(data-number='8500') 0
-              .text
-                span Project completed
-          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
-            .block-18.text-center
-              .text
-                strong.number(data-number='2342') 0
-              .text
-                span Happy Customers
-          .col-md-6.col-lg-3.d-flex.justify-content-center.counter-wrap.ftco-animate
-            .block-18.text-center
-              .text
-                strong.number(data-number='30') 0
-              .text
-                span Award Winning
-    section.ftco-appointment.ftco-section.ftco-no-pt.ftco-no-pb.img(style='background-image: url(images/bg_3.jpg);')
-      .overlay
-      .container
-        .row.d-md-flex.justify-content-end
-          .col-md-12.col-lg-6.half.p-3.py-5.pl-lg-5.ftco-animate.heading-section.heading-section-white
-            span.subheading Записаться на прием
-            h2.mb-4 Бесплатная консультация
-            form.appointment(action='#')
-              .row
-                .col-md-12
-                  .form-group
-                    .form-field
-                      .select-wrap
-                        .icon
-                          span.fa.fa-chevron-down
-                        select.form-control(name='' id='')
-                          option(value='') Выбрать услуги
-                          option(value='') Поменять масло
-                          option(value='') Ремонт двигателя
-                          option(value='') Батарея Заменить
-                          option(value='') Сменить шину
-                          option(value='') Эвакуатор
-                .col-md-6
-                  .form-group
-                    input.form-control(type='text' placeholder='Ваше Имя')
-                .col-md-6
-                  .form-group
-                    input.form-control(type='text' placeholder='Номер автомобиля')
-                .col-md-6
-                  .form-group
-                    .input-wrap
-                      .icon
-                        span.fa.fa-calendar
-                      input.form-control.appointment_date(type='text' placeholder='Дата')
-                .col-md-6
-                  .form-group
-                    .input-wrap
-                      .icon
-                        span.fa.fa-clock-o
-                      input.form-control.appointment_time(type='text' placeholder='Время')
-                .col-md-12
-                  .form-group
-                    textarea.form-control(name='' id='' cols='30' rows='7' placeholder='Сообщение')
-                .col-md-12
-                  .form-group
-                    input.btn.btn-dark.py-3.px-4(type='submit' value='Отправить заявку')
+    include modules/blocks/block-videos
+    
+    include modules/blocks/block-data 
+
+    include modules/blocks/block-consultation
+
     section.ftco-section.testimony-section.bg-light
       .container
         .row.justify-content-center.pb-5.mb-3
