@@ -1,0 +1,55 @@
+include ../../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+include variables
+include mixins
+
+doctype html
+html(lang="ru")
+  include ../modules/head
+
+  body
+    include ../modules/header/header
+
+    include ../modules/bread-crumbs/bread-crumbs
+
+    section.ftco-section
+      .container
+
+        table.table.table-striped.table-hover.mb-5
+          thead
+            tr
+              th(scope="col").text-center №
+              th(scope="col").text-center Ремонт двигателя
+              th(scope="col").text-center Нормочас
+              th(scope="col").text-center Стоимость
+          tbody
+            +rowService(
+              '1',
+              'Двигатель и коробка передач (в сборе) - замена',
+              '14',
+              '632.17'
+              )
+            +rowService(
+              '2',
+              'Опора двигателя в моторном отсеке. Задняя',
+              '2,2',
+              '99.34'
+            )
+
+        table.table.table-striped.table-hover.mb-5
+          thead
+            tr
+              th(scope="col").text-center №
+              th(scope="col").text-center Ремонт системы зажигания и впрыска топлива
+              th(scope="col").text-center Нормочас
+              th(scope="col").text-center Стоимость
+          tbody
+            +rowService(
+              '1',
+              'Впускной коллектор',
+              '1,5',
+              '67.73'
+            )
+
+
+    include ../modules/footer/footer

@@ -162,6 +162,12 @@ module.exports = {
       inject: 'body'
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "price-list.html",
+      template: './src/pages/price-list/price-list.pug',
+      inject: 'body'
+    }),
+
     //отвечает за css
     new MiniCssExtractPlugin({
       filename: "css/main.css"

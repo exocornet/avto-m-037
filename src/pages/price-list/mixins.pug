@@ -1,0 +1,6 @@
+mixin rowService(numberService, nameService, workingHour, serviceCost)
+  tr
+    th(scope="row").text-center= numberService
+      td= nameService
+      td.text-center= workingHour
+      td.text-center= serviceCost
