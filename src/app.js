@@ -9,7 +9,7 @@ import "jquery-migrate";
 import "bootstrap";
 import "jquery.easing";
 import "./js/jquery.waypoints.min"; //install jquery-waypoints
-import "jquery.animate-number";
+// import "jquery.animate-number";
 import "bootstrap-datepicker";
 import "jquery-timepicker/jquery.timepicker";
 import "owl.carousel";
